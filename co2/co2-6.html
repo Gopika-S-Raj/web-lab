@@ -1,0 +1,46 @@
+<html>
+    <head>
+    <script>
+        function quiz()
+        {
+            var score=0;
+        
+        if(document.getElementById("1").checked)
+        {
+            score++;
+        }
+        if(document.getElementById("6").checked)
+        {
+            score++;
+        }
+        if(document.getElementById("11").checked)
+        {
+            score++;
+        }
+        document.write("score is" +score);
+    }
+    </script>
+</head>
+<body>
+<h1 style="border: solid rgb(24, 23, 23);" align="center" text:color="red">ONLINE EXAMINATION</h1>
+<form>
+<p>1.fill in the blank.I ------ checked the book.</p>
+<p><input type="radio" id="1" name="had" >had</p>
+<p><input type="radio" id="2" name="had" >is</p>
+<p><input type="radio" id="3" name="had" >do</p>
+<p><input type="radio" id="4" name="had" >did</p>
+<div><p>2.find the correct spelling</p>
+    <p><input type="radio" id="5" value="obselete">obselete</p>
+    <p><input type="radio" id="6" value="obsolete" >obsolete</p>
+    <p><input type="radio" id="7"value="obsolate" >obsolate</p>
+    <p><input type="radio" id="8" value="obsilate" >obsilate</p>
+    </div>
+    <div><p>3.find the correct meaning of 'exemplory'</p>
+        <p><input type="radio" id="9" value="bad for others">bad for others</p>
+        <p><input type="radio" id="10" value="good to others" >good to others</p>
+        <p><input type="radio" id="11" value="model to others" >model to others</p>
+        <p><input type="radio" id="12" value="worst to others" >worst to others</p>
+        </div></form>
+        <button onclick="quiz()">submit</button>
+    
+    </form>    
